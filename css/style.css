@@ -439,4 +439,8 @@ a:hover {
     .footer-title {
         font-size: 1.4rem;
     }
+    .product-title {
+    font-size: 2rem;
+    white-space: nowrap;
+    }
 }
