@@ -38,8 +38,84 @@
     </div>
   </nav>
 </header>
-<main class="page-placeholder" aria-label="Page content">
-  <!-- Add content of the page here -->
+<main class="container py-5">
+    <section class="row g-5 align-items-start">
+
+        <!-- Product Image -->
+        <div class="col-md-6">
+            <img
+                src="images/everyday-comfort-shirt.png"
+                alt="Everyday Comfort Tee"
+                class="img-fluid rounded"
+            >
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h1 class="product-title">Everyday Comfort Tee</h1>
+            <p class="fs-4">₱499.00</p>
+
+            <form>
+                <!-- Size -->
+                <div class="mb-3">
+                    <label for="size" class="form-label">Size</label>
+                    <select id="size" name="size" class="form-select" required>
+                        <option value="">Choose a size</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+
+                <!-- Color -->
+                <div class="mb-3">
+                    <label for="color" class="form-label">Color</label>
+                    <select id="color" name="color" class="form-select" required>
+                        <option value="">Choose a color</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        class="form-control"
+                        min="1"
+                        max="10"
+                        value="1"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Order Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Product Description -->
+    <section class="mt-5">
+        <h2>Product Description</h2>
+        <p>
+            Enjoy comfort in every moment with the Everyday Comfort Tee.
+            Designed for daily wear, this versatile shirt is a great choice
+            for casual outings, relaxing at home, or going about your day.
+            Its simple style makes it easy to pair with different outfits.
+        </p>
+
+        <ul>
+            <li>Suitable for everyday wear</li>
+            <li>Designed for casual comfort</li>
+            <li>Easy to mix and match</li>
+            <li>Simple and versatile design</li>
+        </ul>
+    </section>
 </main>
 
 <footer>
