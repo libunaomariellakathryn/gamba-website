@@ -494,6 +494,126 @@ main {
   list-style: none; 
 }
 
+/*PRIVACY POLICY PAGE*/
+.policy-content {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem; 
+  color: var(--cream);
+  text-align: justify;
+}
+
+.policy-intro {
+  background-color: #fff;
+  background-image: 
+     linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+     url("adaa86d3b78b88ded847ad603477365ea799f2f3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem 15rem 1rem 8.2rem;
+  margin: 0;
+}
+
+.policy-intro .description {
+  font-size: 0.9rem;
+  color: var(--teal);
+  text-align: left;
+  margin: 0 0 0.25rem;
+}
+
+.policy-intro .policy-meta {
+  font-size: 0.9rem;
+  color: var(--teal);
+  text-align: left;
+  margin: 0;
+}
+
+.policy-content .description{
+  margin-bottom: 0.25rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.policy-meta {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.policy-content .title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.1;
+  text-align: left;
+  margin: 0 0 0.75rem;
+}
+
+.policy-content h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cream);
+  text-decoration: none;
+  text-align: left;
+  margin: 0 0 0.75rem;
+}
+
+.policy-content h3 {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cream);
+  text-decoration: none;
+  text-align: left;
+  margin: 2rem 0 0.5rem;
+}
+
+.policy-wrap {
+  background: var(--pink);
+  padding: 0 0 2rem;
+}
+
+.policy-content p {
+  margin: 0 0 1rem;
+  color: var(--cream);
+  text-align: justify;
+}
+
+.policy-content ul {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.policy-content li {
+  margin-bottom: 0.5rem;
+  color: var(--cream);
+  text-align: justify;
+}
+
+.policy-content section {
+  margin-top: 3rem;
+  padding: 0.5rem 15rem 1rem 8.2rem;
+}
+
+.slogan {
+  font-style: italic;
+}
+
+.policy-content a {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+.policy-content a:hover {
+  color: #fff;
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 767.98px) {
 
@@ -544,4 +664,24 @@ main {
     .footer-title {
         font-size: 1.4rem;
     }
+}
+
+@media (max-width: 991.98px) {
+  .policy-intro,
+  .policy-content section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .policy-intro,
+  .policy-content section {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .policy-wrap {
+    padding: 0 0 3rem;
+  }
 }
