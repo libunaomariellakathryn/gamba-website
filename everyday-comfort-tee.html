@@ -1,160 +1,314 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gamba! — simple T-shirts for everyday life.">
-  <title>Everyday Comfort Tee | Gamba!</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gamba! — simple T-shirts for everyday life.">
+    <title>Everyday Comfort Tee | Gamba!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
 
-<header class="site-header">
-  <nav class="navbar navbar-expand-lg bg-white">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Gamba home">
-        <img class="brand-logo" src="images/gamba-logo.png" alt="Gamba!">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#products">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-          <li class="nav-item"><a class="nav-link " href="contact-us.html">Contact</a></li>
-        </ul>
-        <form class="search-form d-flex ms-lg-4 mt-3 mt-lg-0" role="search" action="index.html" method="get">
-          <label class="visually-hidden" for="siteSearch">Search products</label>
-          <input class="form-control" id="siteSearch" name="search" type="search" placeholder="Search products" aria-label="Search products">
-          <button class="btn search-btn" type="submit" aria-label="Submit search"><span aria-hidden="true">⌕</span></button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
-<main class="container py-5">
-    <section class="row g-5 align-items-start">
+<body class="product-page">
 
-        <!-- Product Image -->
-        <div class="col-md-6">
-            <img
-                src="images/everyday-comfort-shirt.png"
-                alt="Everyday Comfort Tee"
-                class="img-fluid rounded"
-            >
-        </div>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
 
-        <!-- Product Details -->
-        <div class="col-md-6">
-            <h1 class="product-title">Everyday Comfort Tee</h1>
-            <p class="fs-4">₱499.00</p>
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Gamba home">
+                    <img class="brand-logo" src="images/gamba-logo.png" alt="Gamba!">
+                </a>
 
-            <form id="product-form" data-product="Everyday Comfort Tee">
-                <!-- Size -->
-                <div class="mb-3">
-                    <label for="size" class="form-label">Size</label>
-                    <select id="size" name="size" class="form-select" required>
-                        <option value="">Choose a size</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large">Large</option>
-                    </select>
-                </div>
-
-                <!-- Color -->
-                <div class="mb-3">
-                    <label for="color" class="form-label">Color</label>
-                    <select id="color" name="color" class="form-select" required>
-                        <option value="">Choose a color</option>
-                        <option value="White">White</option>
-                        <option value="Black">Black</option>
-                    </select>
-                </div>
-
-                <!-- Quantity -->
-                <div class="mb-3">
-                    <label for="quantity" class="form-label">Quantity</label>
-                    <input
-                        type="number"
-                        id="quantity"
-                        name="quantity"
-                        class="form-control"
-                        min="1"
-                        max="10"
-                        value="1"
-                        required
-                    >
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                    Order Now
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </form>
-        </div>
-    </section>
 
-    <!-- Product Description -->
-    <section class="mt-5">
-        <h2>Product Description</h2>
-        <p>
-            Enjoy comfort in every moment with the Everyday Comfort Tee.
-            Designed for daily wear, this versatile shirt is a great choice
-            for casual outings, relaxing at home, or going about your day.
-            Its simple style makes it easy to pair with different outfits.
-        </p>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#products">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
 
-        <ul>
-            <li>Suitable for everyday wear</li>
-            <li>Designed for casual comfort</li>
-            <li>Easy to mix and match</li>
-            <li>Simple and versatile design</li>
-        </ul>
-    </section>
-</main>
+                    <form class="search-form d-flex ms-lg-4 mt-3 mt-lg-0" role="search" action="index.html" method="get">
+                        <label class="visually-hidden" for="siteSearch">Search products</label>
+                        <input class="form-control" id="siteSearch" name="search" type="search" placeholder="Search products" aria-label="Search products">
+                        <button class="btn search-btn" type="submit" aria-label="Submit search">
+                            <span aria-hidden="true">⌕</span>
+                        </button>
+                    </form>
+                </div>
 
-<footer>
-  <div class="footer-main">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <h2 class="footer-title">DON'T MISS OUT</h2>
-          <p>Be the first to know about our exclusive offers and latest drops.</p>
-          <form id="newsletterForm" class="newsletter-form">
-            <label class="visually-hidden" for="newsletterEmail">Your email address</label>
-            <input class="form-control" id="newsletterEmail" type="email" placeholder="Enter your email address" required>
-            <button class="btn btn-light mt-2" type="submit">Sign up</button>
-            <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
-          </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRODUCT DETAILS -->
+        <section class="product-section">
+            <div class="container">
+                <div class="row align-items-start g-5">
+
+                    <!-- Product Image -->
+                    <div class="col-md-6">
+                        <div class="product-image-container">
+                            <img
+                                src="images/everyday-comfort-shirt.png"
+                                alt="Everyday Comfort Tee"
+                                class="product-main-image"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Product Information -->
+                    <div class="col-md-6">
+                        <div class="product-info">
+
+                            <h1 class="product-title">Everyday Comfort Tee</h1>
+                            <p class="product-price">PHP 499</p>
+
+                            <form id="orderForm">
+
+                                <!-- Size Selection -->
+                                <fieldset class="product-option">
+                                    <legend>SIZE</legend>
+
+                                    <div class="size-options">
+                                        <label>
+                                            <input type="radio" name="size" value="S" required>
+                                            <span>S</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="size" value="M">
+                                            <span>M</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="size" value="L">
+                                            <span>L</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="size" value="XL">
+                                            <span>XL</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Color Selection -->
+                                <fieldset class="product-option">
+                                    <legend>COLOR</legend>
+
+                                    <div class="color-options">
+
+                                        <label>
+                                            <input type="radio" name="color" value="Cream" aria-label="Cream" required>
+                                            <span class="color-swatch cream-swatch"></span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="color" value="Teal" aria-label="Teal">
+                                            <span class="color-swatch teal-swatch"></span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="color" value="Pink" aria-label="Pink">
+                                            <span class="color-swatch pink-swatch"></span>
+                                        </label>
+
+                                    </div>
+                                </fieldset>
+
+                                <!-- Quantity -->
+                                <div class="quantity-row">
+                                    <label for="quantity">Quantity</label>
+
+                                    <input
+                                        type="number"
+                                        id="quantity"
+                                        name="quantity"
+                                        min="1"
+                                        max="10"
+                                        value="1"
+                                        required
+                                    >
+                                </div>
+
+                                <p class="stock-label">Quantity Available: 12</p>
+
+                                <!-- Order Button -->
+                                <button type="submit" class="order-button">
+                                    ORDER NOW
+                                </button>
+
+                            </form>
+
+                            <!-- Product Description -->
+                            <div class="product-description">
+                                <h2>Keep it simple. Stay comfortable.</h2>
+
+                                <p>
+                                    Your everyday companion for life's simple
+                                    moments. The Everyday Comfort Tee features
+                                    a playful Gamba! design that is easy to
+                                    style for casual outings, relaxed weekends,
+                                    and everything in between.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OTHER PRODUCTS -->
+        <section class="other-products-section">
+            <div class="container">
+
+                <h2 class="other-products-title">OTHER PRODUCTS</h2>
+
+                <div class="row g-4">
+
+                    <!-- Don't Be Late Tee -->
+                    <div class="col-6 col-md-3">
+                        <a href="dont-be-late-tee.html" class="other-product-card">
+
+                            <img
+                                src="images/dont-be-late-shirt.png"
+                                alt="Don't Be Late Tee"
+                            >
+
+                            <h3>Don't Be Late Tee</h3>
+                            <p>PHP 499</p>
+
+                            <span class="view-product-link">View →</span>
+
+                        </a>
+                    </div>
+
+                    <!-- Do Good Work Tee -->
+                    <div class="col-6 col-md-3">
+                        <a href="do-good-work-tee.html" class="other-product-card">
+
+                            <img
+                                src="images/do-good-work-shirt.png"
+                                alt="Do Good Work Tee"
+                            >
+
+                            <h3>Do Good Work Tee</h3>
+                            <p>PHP 499</p>
+
+                            <span class="view-product-link">View →</span>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-5">
+                        <h2 class="footer-title">DON'T MISS OUT</h2>
+
+                        <p>Be the first to know about our exclusive offers and latest drops.</p>
+
+                        <form id="newsletterForm" class="newsletter-form">
+                            <label class="visually-hidden" for="newsletterEmail">
+                                Your email address
+                            </label>
+
+                            <input
+                                class="form-control"
+                                id="newsletterEmail"
+                                type="email"
+                                placeholder="Enter your email address"
+                                required
+                            >
+
+                            <button class="btn btn-light mt-2" type="submit">
+                                Sign up
+                            </button>
+
+                            <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
+                        </form>
+                    </div>
+
+                    <!-- Sitemap -->
+                    <div class="col-6 col-lg-3">
+                        <h2 class="footer-title">SITEMAP</h2>
+
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#products">Shop</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-6 col-lg-4">
+                        <h2 class="footer-title">STAY CONNECTED</h2>
+
+                        <ul class="contact-list">
+                            <li>
+                                <span class="contact-icon" aria-hidden="true">@</span>
+                                <a href="mailto:hello@gamba.example">hello@gamba.example</a>
+                            </li>
+
+                            <li>
+                                <span class="contact-icon" aria-hidden="true">☎</span>
+                                <a href="tel:+63123456789">+6312 345 6789</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-6 col-lg-3">
-          <h2 class="footer-title">SITEMAP</h2>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li><li><a href="index.html#products">Shop</a></li>
-            <li><a href="index.html#about">About</a></li><li><a href="contact-us.html">Contact</a></li>
-          </ul>
+
+        <div class="footer-bottom">
+            <p>Gamba! · © 2026</p>
+
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <span aria-hidden="true"> · </span>
+                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            </p>
         </div>
-        <div class="col-6 col-lg-4">
-          <h2 class="footer-title">STAY CONNECTED</h2>
-          <ul class="contact-list">
-            <li><span class="contact-icon" aria-hidden="true">@</span><a href="mailto:hello@gamba.example">hello@gamba.example</a></li>
-            <li><span class="contact-icon" aria-hidden="true">☎</span><a href="tel:+63123456789">+6312 345 6789</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Gamba! · © 2026</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a><span aria-hidden="true"> · </span><a href="terms-and-conditions.html">Terms &amp; Conditions</a></p>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
