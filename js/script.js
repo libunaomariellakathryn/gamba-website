@@ -85,4 +85,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+// EMAILS US BUTTON - CONTACT FORM 
+    const toggleBtn = document.getElementById("toggleEmailFormBtn");
+    const formSection = document.getElementById("contact-form-section");
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+  
+    if (toggleBtn && formSection) {
+      toggleBtn.addEventListener("click", () => {
+        const isHidden = formSection.classList.toggle("d-none");
+        toggleBtn.setAttribute("aria-expanded", String(!isHidden));
+  
+        if (!isHidden) {
+          formSection.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
+  
+    if (contactForm) {
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+  
+        const subject = document.getElementById("emailSubject").value.trim();
+        const message = document.getElementById("emailMessage").value.trim();
+  
+        if (!subject || !message) {
+          if (formStatus) {
+            formStatus.textContent = "Please fill in both the subject and message before sending.";
+          }
+          return;
+        }
+  
+        const recipient = "hello@examplewebsite142.com";
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  
+        if (formStatus) {
+          formStatus.textContent = "Opening your email app...";
+        }
+  
+        window.location.href = mailtoLink;
+      });
+    }
+
 });
