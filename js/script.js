@@ -42,6 +42,34 @@ document.addEventListener('DOMContentLoaded', () => {
     newsletter.reset();
   });
   
-  // Add additional JS properties here
+  // Product pages, Order button
+const TO_ADDRESS = "orders@examplewebsite142.com";
+
+const form = document.querySelector("#product-form");
+
+function buildMailto() {
+  const product = form.dataset.product;
+
+  const size = document.querySelector("#size").value;
+  const color = document.querySelector("#color").value;
+  const quantity = document.querySelector("#quantity").value;
+
+  const subject = "Product request and order details for: " + product;
+  const body = 
+    "Size: " + size + "\r\n\r\n" +
+    "Color: " + color + "\r\n\r\n" +
+    "Quantity: " + quantity;
+
+  return (
+    "mailto:" + TO_ADDRESS +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body)
+  );
+}
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  window.location.href = buildMailto();
+});
 
 });
