@@ -778,7 +778,7 @@ main {
   font-size: 1rem;
   color: var(--green);
   text-align: left;
-  margin: 0 0 0.25rem;
+  margin: 0;
 }
 
 .policy-intro .policy-meta {
@@ -788,14 +788,14 @@ main {
   margin: 0;
 }
 
-.policy-content .title {
+.title {
   font-family: 'Fredoka', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   color: var(--green);
   line-height: 1.1;
   text-align: left;
-  margin: 0 0 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .policy-content h2 {
@@ -805,7 +805,7 @@ main {
   color: var(--cream);
   text-decoration: none;
   text-align: left;
-  margin: 0 0 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .policy-content h3 {
@@ -815,22 +815,22 @@ main {
   color: var(--cream);
   text-decoration: none;
   text-align: left;
-  margin: 2rem 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .policy-wrap {
   background: var(--pink);
-  padding: 0 0 2rem;
+  padding: 0;
 }
 
 .policy-content p {
-  margin: 0 0 1rem;
+  margin: 1.40rem;
   color: var(--cream);
   text-align: justify;
 }
 
 .policy-content ul {
-  margin: 0 0 1rem;
+  margin: 1rem;
   padding-left: 1.5rem;
 }
 
