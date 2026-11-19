@@ -40,7 +40,8 @@
 </header>
 <main class="page-placeholder" aria-label="Page content">
 
-<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
+  <div class="connect-bg-wrapper">
   <main class="container py-5">
     <div class="text-center mb-5">
       <h1 class="connect-title">Connect With Us</h1>
@@ -57,15 +58,15 @@
         <div class="connect-icon-box mb-3">
           <img src="email.png" alt="Email us" class="connect-icon">
         </div>
-        <a href="mailto:hello@examplewebsite142.com?subject=Question%20about%20mode%20of%20payment&body=Hello. Do you accept cash on delivery within Metro Manila?" class="connect-pill connect-pill-link mb-3">
+        <button type="button" id="toggleEmailFormBtn" class="connect-pill connect-pill-link mb-3" aria-expanded="false" aria-controls="contact-form-section">
           Email us
-        </a>
-    <p class="connect-text">
-      Need a hand?<br>
-      Send a message straight<br>
-      to our inbox.
-    </p>
-  </div>
+        </button>
+        <p class="connect-text">
+          Need a hand?<br>
+          Send a message straight<br>
+          to our inbox.
+        </p>
+      </div>
   
       <!-- Column 2: Call -->
       <div class="col-12 col-md-4 d-flex flex-column align-items-center">
@@ -92,6 +93,26 @@
         </p>
       </div>
     </div>
+
+    <!-- "Email us" is clicked will open Contact Form -->
+    <section id="contact-form-section" class="my-5 mx-auto d-none" style="max-width: 600px;">
+      <h2 class="connect-title fs-2 text-center mb-4">Send Us a Message</h2>
+      <form id="contactForm" class="contact-card text-start p-4 rounded">
+        <div class="mb-3">
+          <label for="emailSubject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="emailSubject" name="subject" value="Question about mode of payment" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="emailMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="emailMessage" name="message" rows="4" required>Hello. Do you accept cash on delivery within Metro Manila?</textarea>
+        </div>
+    
+        <button type="submit" class="connect-pill connect-pill-link w-100">Send Email</button>
+        <p id="formStatus" class="mt-2 mb-0 text-center" aria-live="polite"></p>
+      </form>
+    </section>
+
   </main>
 
     <section class="faq-section">  
