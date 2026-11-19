@@ -389,6 +389,255 @@ a:hover {
 
 /* Add additional CSS properties here */
 
+/* ================================
+   INDIVIDUAL PRODUCT PAGE
+================================ */
+
+.product-section {
+    padding: 3rem 0;
+    text-align: left;
+}
+
+.product-image-container {
+    width: 100%;
+}
+
+.product-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-title {
+    color: var(--green);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    color: var(--ink);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.product-option {
+    margin-bottom: 1.5rem;
+}
+
+.product-option legend {
+    color: var(--ink);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+
+/* SIZE OPTIONS */
+
+.size-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.size-options label {
+    cursor: pointer;
+}
+
+.size-options input {
+    position: absolute;
+    opacity: 0;
+}
+
+.size-options span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--green);
+    border-radius: 6px;
+    color: var(--green);
+    font-family: 'Space Mono', monospace;
+}
+
+.size-options input:checked + span {
+    background-color: var(--green);
+    color: white;
+}
+
+.size-options input:focus-visible + span {
+    outline: 3px solid var(--teal);
+    outline-offset: 3px;
+}
+
+/* COLOR OPTIONS */
+
+.color-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.color-options label {
+    cursor: pointer;
+}
+
+.color-options input {
+    position: absolute;
+    opacity: 0;
+}
+
+.color-swatch {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+
+.cream-swatch {
+    background-color: var(--cream);
+}
+
+.teal-swatch {
+    background-color: var(--teal);
+}
+
+.pink-swatch {
+    background-color: var(--pink);
+}
+
+.color-options input:checked + .color-swatch {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
+
+.color-options input:focus-visible + .color-swatch {
+    outline: 3px solid var(--teal);
+    outline-offset: 4px;
+}
+
+
+/* QUANTITY */
+
+.quantity-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.quantity-row input {
+    width: 75px;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.stock-label {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ORDER BUTTON */
+
+.order-button {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.order-button:hover {
+    background-color: var(--teal);
+}
+
+.order-button:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 3px;
+}
+
+/* PRODUCT DESCRIPTION */
+
+.product-info .product-description {
+    margin-top: 2rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+/* OTHER PRODUCTS */
+
+.other-products-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.other-product-card {
+    height: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.other-product-card:hover {
+    transform: translateY(-5px);
+}
+
+.other-product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.other-product-card h3 {
+    color: var(--green);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+}
+
+.other-product-card p {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+/* MOBILE PRODUCT PAGE */
+
+@media (max-width: 768px) {
+    .product-section {
+        padding: 1.5rem 0;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .product-info {
+        padding: 0.5rem;
+    }
+
+    .other-products-section {
+        padding: 2rem 0;
+    }
+}
+
+
 /* CONTACT US PAGA */
 main {
   max-width: 64rem;                 
@@ -516,24 +765,40 @@ main {
 
 .policy-intro .description {
   font-size: 0.9rem;
-  color: var(--green);
+  color: var(--teal);
   text-align: left;
   margin: 0 0 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .policy-intro .policy-meta {
   font-size: 0.9rem;
-  color: var(--green);
+  color: var(--teal);
   text-align: left;
   margin: 0;
+}
+
+.policy-content .description{
+  margin-bottom: 0.25rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.policy-meta {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 .policy-content .title {
   font-family: 'Fredoka', sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  color: var(--green);
+  color: var(--teal);
   line-height: 1.1;
   text-align: left;
   margin: 0 0 0.75rem;
@@ -668,4 +933,108 @@ main {
   .policy-wrap {
     padding: 0 0 3rem;
   }
+}
+/* SELECTED COLOR SWATCH */
+
+.color-options label:has(input:checked) .color-swatch {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
+
+.color-options label:focus-within .color-swatch {
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
+}
+/* PRODUCT PAGE LAYOUT */
+
+.product-page main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-page .product-info {
+    padding: 0;
+}
+
+.product-page .product-image-container {
+    width: 100%;
+}
+
+/* PRODUCT DETAILS REFINEMENT */
+
+.product-page .product-section {
+    padding: 3rem 0;
+}
+
+.product-page .product-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-page .product-price {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.product-page .product-option {
+    margin-bottom: 1.25rem;
+}
+
+.product-page .product-option legend {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-page .order-button {
+    width: auto;
+    padding: 12px 32px;
+    border-radius: 4px;
+}
+
+.product-page .product-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-page .product-description p {
+    font-size: 0.9rem;
+    color: var(--ink);
+}
+
+/* OTHER PRODUCTS REFINEMENT */
+
+.product-page .other-products-section {
+    background-color: var(--pink);
+    padding: 3rem 0;
+}
+
+.product-page .other-products-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-page .other-products-section .row {
+    justify-content: center;
+}
+
+.product-page .other-product-card {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.product-page .other-product-card h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.product-page .other-product-card p {
+    font-weight: 400;
+}
+
+.product-page .view-product-link {
+    text-decoration: underline;
 }
