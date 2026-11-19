@@ -42,34 +42,47 @@ document.addEventListener('DOMContentLoaded', () => {
     newsletter.reset();
   });
   
-  // Product pages, Order button
-const TO_ADDRESS = "orders@examplewebsite142.com";
+  
+// PRODUCT PAGES — ORDER BUTTON
 
-const form = document.querySelector("#product-form");
+  const TO_ADDRESS = "orders@examplewebsite142.com";
+  const form = document.getElementById("orderForm");
 
-function buildMailto() {
-  const product = form.dataset.product;
+  if (form) {
 
-  const size = document.querySelector("#size").value;
-  const color = document.querySelector("#color").value;
-  const quantity = document.querySelector("#quantity").value;
+    function buildMailto() {
 
-  const subject = "Product request and order details for: " + product;
-  const body = 
-    "Size: " + size + "\r\n\r\n" +
-    "Color: " + color + "\r\n\r\n" +
-    "Quantity: " + quantity;
+      const product = document.querySelector(".product-title").textContent.trim();
 
-  return (
-    "mailto:" + TO_ADDRESS +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body)
-  );
-}
+      const size = form.querySelector('input[name="size"]:checked').value;
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  window.location.href = buildMailto();
-});
+      const color = form.querySelector('input[name="color"]:checked').value;
+
+      const quantity = form.querySelector("#quantity").value;
+
+      const subject = "Product request and order details for: " + product;
+
+      const body =
+        "Hello Gamba!\r\n\r\n" +
+        "I would like to order the following product:\r\n\r\n" +
+        "Product: " + product + "\r\n" +
+        "Size: " + size + "\r\n" +
+        "Color: " + color + "\r\n" +
+        "Quantity: " + quantity + "\r\n\r\n" +
+        "Thank you!";
+
+      return (
+        "mailto:" + TO_ADDRESS +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body)
+      );
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      window.location.href = buildMailto();
+    });
+
+  }
 
 });
