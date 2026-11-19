@@ -516,40 +516,24 @@ main {
 
 .policy-intro .description {
   font-size: 0.9rem;
-  color: var(--teal);
+  color: var(--green);
   text-align: left;
   margin: 0 0 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .policy-intro .policy-meta {
   font-size: 0.9rem;
-  color: var(--teal);
+  color: var(--green);
   text-align: left;
   margin: 0;
-}
-
-.policy-content .description{
-  margin-bottom: 0.25rem;
-}
-
-.description {
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-align: center;
-}
-
-.policy-meta {
-  margin: 0 0 1.5rem;
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-align: center;
 }
 
 .policy-content .title {
   font-family: 'Fredoka', sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  color: var(--teal);
+  color: var(--green);
   line-height: 1.1;
   text-align: left;
   margin: 0 0 0.75rem;
