@@ -980,9 +980,7 @@ a {
 
   .brand-name {
     font-size: 1.25rem;
-    margin-left: 0;
-    max-width: 0px;
-    padding-left: 0 0 0 0;
+    margin-left: -8px; /* Moves Gamba closer to logo */
   }
 
   .navbar-nav {
@@ -1077,7 +1075,7 @@ a {
   }
 
   .stay-connected {
-    margin-left: 12px;
+    margin-left: 4px; /* Moves Stay Connected closer to the left */
   }
 
   /* SMALL PHONE */
@@ -1087,7 +1085,6 @@ a {
     }
   }
 }
-
 
 /* TABLET RESPONSIVE (576px–991.98px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -1100,12 +1097,12 @@ a {
     margin-right: 0 !important;
   }
 
-  .search-form {
-    margin: 5px 0 12px;
+  .brand-name {
+    margin-left: -8px; /* Moves Gamba closer to logo */
   }
 
-  .brand-name {
-    margin-left: 0;
+  .search-form {
+    margin: 5px 0 12px;
   }
 
   /* HERO */
@@ -1143,8 +1140,12 @@ a {
   .policy-content section {
     padding: 1.5rem;
   }
-}
 
+  /* FOOTER */
+  .stay-connected {
+    margin-left: 4px;
+  }
+}
 
 /* LAPTOP / PC RESPONSIVE (992px and above) */
 @media (min-width: 992px) {
