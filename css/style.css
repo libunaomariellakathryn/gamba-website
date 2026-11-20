@@ -980,7 +980,7 @@ a {
 
   .brand-name {
     font-size: 1.25rem;
-    margin-left: -8px; /* Moves Gamba closer to logo */
+    margin-left: -8px; 
   }
 
   .navbar-nav {
@@ -1075,7 +1075,7 @@ a {
   }
 
   .stay-connected {
-    margin-left: 4px; /* Moves Stay Connected closer to the left */
+    margin-left: 0px;
   }
 
   /* SMALL PHONE */
@@ -1098,7 +1098,7 @@ a {
   }
 
   .brand-name {
-    margin-left: -8px; /* Moves Gamba closer to logo */
+    margin-left: -8px;
   }
 
   .search-form {
