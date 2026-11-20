@@ -966,39 +966,69 @@ a {
   transform: translateX(40px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 991.98px) {
+/* ========================================
+   PHONE RESPONSIVE (575.98px and below)
+======================================== */
+@media (max-width: 575.98px) {
+
+  /* NAVBAR */
+  .navbar {
+    min-height: 70px;
+  }
+
+  .brand-logo {
+    width: 125px;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+    margin-left: 0;
+  }
+
   .navbar-nav {
     gap: 8px;
     padding: 12px 0;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
   .search-form {
     margin: 5px 0 12px;
   }
-  .brand-name {
-    margin-left: 0px;
-  }
-  .hero-copy {
-    padding-left: 20px;
-  }
-  .product-card {
-    padding: 0 5px;
-  }
-  .policy-intro,
-  .policy-content section {
-    padding: 1.5rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .policy-intro,
-  .policy-content section {
-    padding: 1rem;
-  }
-}
 
-@media (max-width: 768px) {
+  /* HERO */
+  .hero-section {
+    min-height: 360px;
+    background-position: center;
+  }
+
+  .hero-copy {
+    padding: 55px 15px;
+  }
+
+  .hero-logo {
+    width: min(100%, 420px);
+  }
+
+  .hero-tagline {
+    margin-left: 0;
+    font-size: 0.82rem;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  /* SECTIONS */
+  .section-pad {
+    padding: 48px 0;
+  }
+
+  .section-heading p {
+    padding: 0 12px;
+  }
+
+  /* PRODUCTS */
   .product-section {
     padding: 1.5rem 0;
   }
@@ -1011,74 +1041,120 @@ a {
     padding: 0.5rem;
   }
 
-  .other-products-section {
-    padding: 2rem 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .navbar {
-    min-height: 70px;
-  }
-  .brand-logo {
-    width: 125px;
-  }
-  .hero-section {
-    min-height: 360px;
-    background-position: center;
-  }
-  .hero-copy {
-    padding: 55px 15px;
-  }
-  .hero-logo {
-    width: min(100%, 420px);
-  }
-  .brand-name {
-    font-size: 1.25rem;
-    margin-left: 0px;
-  }
-  .hero-tagline {
-    margin-left: 0;
-    font-size: 0.82rem;
-  }
-  .desktop-break {
-    display: none;
-  }
-  .section-pad {
-    padding: 48px 0;
-  }
-  .section-heading p {
-    padding: 0 12px;
-  }
   .product-card {
     max-width: 430px;
     margin: 0 auto 18px;
     padding: 0 20px;
   }
+
   .product-card h3,
   .product-description {
     min-height: 0;
   }
+
+  .other-products-section {
+    padding: 2rem 0;
+  }
+
+  /* ABOUT */
   .about-logo-image {
     width: min(250px, 75%);
   }
+
+  /* POLICY */
+  .policy-intro,
+  .policy-content section {
+    padding: 1rem;
+  }
+
+  /* FOOTER */
   .footer-main {
     padding: 42px 0;
   }
-  .stay-connected {
-    margin-left: 12px;
-  }
-}
-@media (max-width: 420px) {
-  .hero-tagline {
-    font-size: 0.72rem;
-  }
+
   .footer-title {
     font-size: 1rem;
   }
+
+  .stay-connected {
+    margin-left: 12px;
+  }
+
+  /* SMALL PHONE */
+  @media (max-width: 420px) {
+    .hero-tagline {
+      font-size: 0.72rem;
+    }
+  }
 }
-@media (min-width: 48em) {
+
+
+/* ========================================
+   TABLET RESPONSIVE (576px–991.98px)
+======================================== */
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+  /* NAVBAR */
+  .navbar-nav {
+    gap: 8px;
+    padding: 12px 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .search-form {
+    margin: 5px 0 12px;
+  }
+
+  .brand-name {
+    margin-left: 0;
+  }
+
+  /* HERO */
+  .hero-copy {
+    padding-left: 20px;
+  }
+
+  /* PRODUCTS */
+  .product-section {
+    padding: 1.5rem 0;
+  }
+
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-info {
+    padding: 0.5rem;
+  }
+
+  .product-card {
+    padding: 0 5px;
+  }
+
+  .other-products-section {
+    padding: 2rem 0;
+  }
+
+  /* POLICY */
   .policy-wrap {
     padding: 0 0 3rem;
   }
+
+  .policy-intro,
+  .policy-content section {
+    padding: 1.5rem;
+  }
+}
+
+
+/* ========================================
+   LAPTOP / PC RESPONSIVE (992px and above)
+======================================== */
+@media (min-width: 992px) {
+
+  .policy-wrap {
+    padding: 0 0 3rem;
+  }
+
 }
