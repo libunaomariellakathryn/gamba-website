@@ -981,6 +981,7 @@ a {
   .brand-name {
     font-size: 1.25rem;
     margin-left: 0;
+    max-width: 0px;
   }
 
   .navbar-nav {
