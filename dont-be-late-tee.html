@@ -1,60 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Gamba! — simple T-shirts for everyday life.">
-    <title>Don't Be Late Tee | Gamba!</title>
-
+    <meta name="description" content="Gamba! — good luck looks good on you.">
+    <title>Don't Be Late Tee | Gamba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="product-page">
-
-    <!-- NAVIGATION -->
+<body>
     <header class="site-header">
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container">
-
-                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" aria-label="Gamba home">
-                    <img class="brand-logo" src="images/gamba-logo.png" alt="Gamba!">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images\gambaheaderlogo.png" alt="Gamba! logo" class="brand-logo">
+                    <span class="brand-name">Gamba</span>
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#products">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
-                        </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto m-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#products">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
                     </ul>
-
-                    <form class="search-form d-flex ms-lg-4 mt-3 mt-lg-0" role="search" action="index.html" method="get">
-                        <label class="visually-hidden" for="siteSearch">Search products</label>
-                        <input class="form-control" id="siteSearch" name="search" type="search" placeholder="Search products" aria-label="Search products">
-                        <button class="btn search-btn" type="submit" aria-label="Submit search">
-                            <span aria-hidden="true">⌕</span>
-                        </button>
+                    <form class="search-form d-flex" action="index.html" method="get" role="search">
+                        <input class="form-control" type="search" name="search" aria-label="Search products">
+                        <button class="search-btn" type="submit" aria-label="Search">⌕</button>
                     </form>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -69,11 +48,7 @@
                     <!-- Product Image -->
                     <div class="col-md-6">
                         <div class="product-image-container">
-                            <img
-                                src="images/dont-be-late-shirt.png"
-                                alt="Don't Be Late Tee"
-                                class="product-main-image"
-                            >
+                            <img src="images/dont-be-late-shirt.png" alt="Don't Be Late Tee" class="product-main-image">
                         </div>
                     </div>
 
@@ -84,7 +59,7 @@
                             <h1 class="product-title">Don't Be Late Tee</h1>
                             <p class="product-price">PHP 499</p>
 
-                            <form id="orderForm">
+                            <form id="orderForm" data-product="Don't Be Late Tee">
 
                                 <!-- Size Selection -->
                                 <fieldset class="product-option">
@@ -141,15 +116,7 @@
                                 <div class="quantity-row">
                                     <label for="quantity">Quantity</label>
 
-                                    <input
-                                        type="number"
-                                        id="quantity"
-                                        name="quantity"
-                                        min="1"
-                                        max="10"
-                                        value="1"
-                                        required
-                                    >
+                                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
                                 </div>
 
                                 <p class="stock-label">Quantity Available: 12</p>
@@ -166,11 +133,7 @@
                                 <h2>Be on time. Make every moment count.</h2>
 
                                 <p>
-                                    A playful reminder to make the most of your
-                                    time. The Don't Be Late Tee is made for
-                                    everyday adventures, busy mornings, and
-                                    casual moments. Keep it simple, comfortable,
-                                    and always ready for whatever the day brings.
+                                    A playful reminder to make the most of your time. The Don't Be Late Tee is made for everyday adventures, busy mornings, and casual moments. Keep it simple, comfortable, and always ready for whatever the day brings.
                                 </p>
                             </div>
 
@@ -193,10 +156,7 @@
                     <div class="col-6 col-md-3">
                         <a href="do-good-work-tee.html" class="other-product-card">
 
-                            <img
-                                src="images/do-good-work-shirt.png"
-                                alt="Do Good Work Tee"
-                            >
+                            <img src="images/do-good-work-shirt.png" alt="Do Good Work Tee">
 
                             <h3>Do Good Work Tee</h3>
                             <p>PHP 499</p>
@@ -210,10 +170,7 @@
                     <div class="col-6 col-md-3">
                         <a href="everyday-comfort-tee.html" class="other-product-card">
 
-                            <img
-                                src="images/everyday-comfort-shirt.png"
-                                alt="Everyday Comfort Tee"
-                            >
+                            <img src="images/everyday-comfort-shirt.png" alt="Everyday Comfort Tee">
 
                             <h3>Everyday Comfort Tee</h3>
                             <p>PHP 499</p>
@@ -229,43 +186,22 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer-main">
             <div class="container">
-                <div class="row g-4">
-
-                    <!-- Newsletter -->
+                <div class="row g-5">
                     <div class="col-lg-5">
                         <h2 class="footer-title">DON'T MISS OUT</h2>
-
-                        <p>Be the first to know about our exclusive offers and latest drops.</p>
-
-                        <form id="newsletterForm" class="newsletter-form">
-                            <label class="visually-hidden" for="newsletterEmail">
-                                Your email address
-                            </label>
-
-                            <input
-                                class="form-control"
-                                id="newsletterEmail"
-                                type="email"
-                                placeholder="Enter your email address"
-                                required
-                            >
-
-                            <button class="btn btn-light mt-2" type="submit">
-                                Sign up
-                            </button>
-
-                            <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
+                        <p>New drops, restocks, and the occasional good-luck reminder.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <label for="newsletterEmail" class="visually-hidden">Your email address</label>
+                            <input class="form-control" type="email" id="newsletterEmail" placeholder="Enter Your Email Address" required>
+                            <button class="btn newsletter-btn" type="submit">SIGN UP</button>
+                            <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
                         </form>
                     </div>
-
-                    <!-- Sitemap -->
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-2">
                         <h2 class="footer-title">SITEMAP</h2>
-
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="index.html#products">Shop</a></li>
@@ -273,42 +209,23 @@
                             <li><a href="contact-us.html">Contact</a></li>
                         </ul>
                     </div>
-
-                    <!-- Contact Information -->
-                    <div class="col-6 col-lg-4">
+                    <div class="col-6 col-lg-4 stay-connected">
                         <h2 class="footer-title">STAY CONNECTED</h2>
-
                         <ul class="contact-list">
-                            <li>
-                                <span class="contact-icon" aria-hidden="true">@</span>
-                                <a href="mailto:hello@gamba.example">hello@gamba.example</a>
-                            </li>
-
-                            <li>
-                                <span class="contact-icon" aria-hidden="true">☎</span>
-                                <a href="tel:+63123456789">+6312 345 6789</a>
-                            </li>
+                            <li><span class="contact-icon">✉</span><a href="mailto:hello@gamba.example">hello@gamba.example</a></li>
+                            <li><span class="contact-icon">☎︎</span><a href="tel:+631234567890">+6312 345 6789</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>Gamba! · © 2026</p>
-
-            <p>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <span aria-hidden="true"> · </span>
-                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-            </p>
+            <p>Gamba! © 2026</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
