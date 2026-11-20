@@ -966,9 +966,7 @@ a {
   transform: translateX(40px);
 }
 
-/* ========================================
-   PHONE RESPONSIVE (575.98px and below)
-======================================== */
+/* PHONE RESPONSIVE (575.98px and below) */
 @media (max-width: 575.98px) {
 
   /* NAVBAR */
@@ -1089,9 +1087,7 @@ a {
 }
 
 
-/* ========================================
-   TABLET RESPONSIVE (576px–991.98px)
-======================================== */
+/* TABLET RESPONSIVE (576px–991.98px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
 
   /* NAVBAR */
@@ -1148,9 +1144,7 @@ a {
 }
 
 
-/* ========================================
-   LAPTOP / PC RESPONSIVE (992px and above)
-======================================== */
+/* LAPTOP / PC RESPONSIVE (992px and above) */
 @media (min-width: 992px) {
 
   .policy-wrap {
