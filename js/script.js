@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // PRODUCT PAGES — ORDER BUTTON
-
     const TO_ADDRESS = "orders@examplewebsite142.com";
     const form = document.getElementById("orderForm");
 
