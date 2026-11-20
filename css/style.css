@@ -1067,8 +1067,7 @@ a {
 
   /* FOOTER */
   .footer-main {
-    padding: 100px 100px;
-    margin-left: 100px;
+    padding: 45px 30px;
   }
 
   .footer-title {
@@ -1076,7 +1075,7 @@ a {
   }
 
   .stay-connected {
-    margin-left: 0px;
+	transform: translateX(-20px);
   }
 
   /* SMALL PHONE */
@@ -1143,8 +1142,11 @@ a {
   }
 
   /* FOOTER */
+  .footer-main {
+    padding: 45px 30px;
+  }
   .stay-connected {
-    margin-left: 4px;
+	transform: translateX(-20px);
   }
 }
 
