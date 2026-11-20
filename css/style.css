@@ -982,6 +982,7 @@ a {
     font-size: 1.25rem;
     margin-left: 0;
     max-width: 0px;
+    padding-left: 0 0 0 0;
   }
 
   .navbar-nav {
