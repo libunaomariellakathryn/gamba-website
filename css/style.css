@@ -978,7 +978,7 @@ a {
     margin: 5px 0 12px;
   }
   .brand-name {
-    padding-left: 25px;
+    margin-left: 5px;
   }
   .hero-copy {
     padding-left: 20px;
@@ -1035,7 +1035,7 @@ a {
   }
   .brand-name {
     font-size: 1.25rem;
-    margin-left: 7px;
+    margin-left: 3px;
   }
   .hero-tagline {
     margin-left: 0;
